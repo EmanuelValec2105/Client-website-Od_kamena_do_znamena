@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Kontakt</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logo2.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li><a href="index.html">Početna</a></li>
+								<li><a href="about.html">O nama</a></li>
+								<li><a href="products.html">Proizvodi</a>
+									<ul class="sub-menu">
+										<li><a href="products.html?filter=.privjesci">Privjesci</a></li>
+										<li><a href="products.html?filter=.lancici">Lančići</a></li>
+										<li><a href="products.html?filter=.narukvice">Narukvice</a></li>
+										<li><a href="products.html?filter=.svijecnjaci">Svijećnjaci</a></li>
+										<li><a href="products.html?filter=.skulpture">Skulpture</a></li>
+										<li><a href="products.html?filter=.krizevi">Križevi</a></li>
+										<li><a href="products.html?filter=.gravure">Gravure</a></li>
+										<li><a href="products.html?filter=.natpisi">Natpisi</a></li>
+										<li><a href="products.html?filter=.skropionice">Škropionice</a></li>
+										<li><a href="products.html?filter=.ostalo">Ostalo</a></li>
+									</ul>
+								</li>
+								<!--<li><a href="blog.html">Blog</a></li>-->
+								<li><a id="active" href="#">Kontakt</a></li>
+								<!--<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</li>-->
+							</ul>
+						</nav>
+						
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search arewa -->
+	
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1><span class="orange-text">Kontaktirajte nas</span></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- contact form -->
+	<div class="contact-from-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 mb-5 mb-lg-0">
+					<div class="form-title">
+						<h2>Imate pitanja?</h2>
+						<p>Tu smo za sva Vaša pitanja. Kontaktirajte nas!</p>
+					</div>
+				 	<div id="form_status"></div>
+					<div class="contact-form">
+						<form id="fruitkha-contact" method="POST" action="submit_form.php">
+							<p>
+								<input type="text" placeholder="Ime" name="name" id="name">
+								<input type="text" placeholder="Prezime" name="surname" id="surname">
+							</p>
+							<p>
+								<input type="email" placeholder="Email" name="email" id="email">
+								<input type="tel" placeholder="Mobitel" name="phone" id="phone">
+							</p>
+							<p><textarea name="message" id="message" cols="20" rows="10" placeholder="Poruka"></textarea></p>
+							<input type="hidden" name="token" value="FsWga4&@f6aw" />
+							<p><input type="submit" value="Pošalji"></p>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="contact-form-wrap">
+						<div class="contact-form-box">
+							<h4><i class="fas fa-map"></i> Adresa </h4>
+							<p>Lug Zabočki 70 <br> 49210 Zabok <br> Hrvatska </p>
+						</div>
+						<div class="contact-form-box">
+							<h4><i class="far fa-clock"></i> Radno vrijeme</h4>
+							<p>PON - SUB : 8 - 20 <br> NED : Zatvoreno </p>
+						</div>
+						<div class="contact-form-box">
+							<h4><i class="fas fa-address-book"></i> Kontakt</h4>
+							<p>Mob: +385 91 360 7879 <br> Email: valecluka8@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end contact form -->
+
+	<!-- find our location -->
+	<div class="find-location blue-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p> <i class="fas fa-map-marker-alt"></i><span class="orange-text">Naša lokacija</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end find our location -->
+
+	<!-- google map section -->
+	<div class="embed-responsive embed-responsive-21by9">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11082.259183835255!2d15.9270488!3d46.0198782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765e9ec3f07a655%3A0x80d9a2462e9db071!2sOd%20kamena%20do%20znamena!5e0!3m2!1shr!2shr!4v1700506609780!5m2!1shr!2shr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	<!-- end google map section -->
+
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">O nama</h2>
+						<p>Mi smo obiteljski obrt koji želi s Vama podjeliti radost u obliku predivnih, kamenih i ručno rađenih proizvoda.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Kontakt</h2>
+						<ul>
+							<li>Lug Zabočki 70, 49210 Zabok</li>
+							<li>valecluka8@gmail.com</li>
+							<li>+385 91 360 7879</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Stranice</h2>
+						<ul>
+							<li><a href="index.html">Početna</a></li>
+							<li><a href="about.html">O nama</a></li>
+							<li><a href="products.html">Proizvodi</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="#.html">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+	
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2024 - Od kamena do znamena,  All Rights Reserved.<br>
+					</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="https://www.facebook.com/p/Od-kamena-do-znamena-100069816590929/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/odkamenadoznamena/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+	
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- form validation js -->
+	<script src="assets/js/form-validate.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

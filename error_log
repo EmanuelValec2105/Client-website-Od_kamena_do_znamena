@@ -1,0 +1,5 @@
+[11-Jun-2024 05:07:26 UTC] PHP Warning:  Undefined variable $email_content in /home/lukavalec/public_html/submit_form.php on line 27
+[12-Jun-2024 07:53:59 UTC] PHP Warning:  Undefined variable $email_content in /home/lukavalec/public_html/submit_form.php on line 26
+[12-Jun-2024 09:31:07 UTC] PHP Warning:  Undefined variable $email_content in /home/lukavalec/public_html/submit_form.php on line 27
+[12-Jun-2024 09:32:33 UTC] PHP Warning:  Undefined variable $email_content in /home/lukavalec/public_html/submit_form.php on line 27
+[13-Aug-2024 11:37:59 UTC] PHP Warning:  Undefined variable $email_content in /home/lukavalec/public_html/submit_form.php on line 27

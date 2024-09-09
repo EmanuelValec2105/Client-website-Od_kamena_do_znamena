@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Proizvodi</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- google font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logo2.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li><a href="index.html">Početna</a></li>
+								<li><a href="about.html">O nama</a></li>
+								<li><a id="active" href="products.html">Proizvodi</a> 
+									<ul class="sub-menu">
+										<li><a href="products.html?filter=.privjesci">Privjesci</a></li>
+										<li><a href="products.html?filter=.lancici">Lančići</a></li>
+										<li><a href="products.html?filter=.narukvice">Narukvice</a></li>
+										<li><a href="products.html?filter=.svijecnjaci">Svijećnjaci</a></li>
+										<li><a href="products.html?filter=.skulpture">Skulpture</a></li>
+										<li><a href="products.html?filter=.krizevi">Križevi</a></li>
+										<li><a href="products.html?filter=.gravure">Gravure</a></li>
+										<li><a href="products.html?filter=.natpisi">Natpisi</a></li>
+										<li><a href="products.html?filter=.skropionice">Škropionice</a></li>
+										<li><a href="products.html?filter=.ostalo">Ostalo</a></li>
+									</ul>
+								</li>
+								<!--<li><a href="blog.html">Blog</a></li>-->
+								<li><a href="contact.html">Kontakt</a></li>
+								<!--<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="proizvodi-stranice/.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</li>-->
+							</ul>
+						</nav>
+						
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- search area -->
+	<div class="search-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<span class="close-btn"><i class="fas fa-window-close"></i></span>
+					<div class="search-bar">
+						<div class="search-bar-tablecell">
+							<h3>Search For:</h3>
+							<input type="text" placeholder="Keywords">
+							<button type="submit">Search <i class="fas fa-search"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end search arewa -->
+	
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>Istražite naše proizvode</p>
+						<h1><span class="orange-text">Proizvodi</span></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- products -->
+	<div class="product-section mt-100 mb-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="toolbar">
+						<div class="custom-dropdown" id="drop1">
+							<select id="categoryFilter">
+								<option>Odaberi kategoriju</option>
+								<option value="*">Sve</option>
+								<option value=".privjesci">Privjesci</option>
+								<option value=".lancici">Lančići</option>
+								<option value=".narukvice">Narukvice</option>
+								<option value=".svijecnjaci">Svijećnjaci</option>
+								<option value=".skulpture">Skulpture</option>
+								<option value=".krizevi">Križevi</option>
+								<option value=".gravure">Gravure</option>
+								<option value=".natpisi">Natpisi</option>
+								<option value=".skropionice">Škropionice</option>
+								<option value=".ostalo">Ostalo</option>
+								<option value=".po_narudzbi">Po narudžbi</option>>
+							</select>
+						  </div>
+						<div class="custom-dropdown" id="drop2">
+							<select id="sortFilter">
+								<option>Sortiraj</option>
+								<option value="original-order">Zadano</option>
+								<option value="price:asc">Cijena: od najniže</option>
+								<option value="price:desc">Cijena: od najviše</option>
+								<option value="name:asc">Naziv: A - Z</option>
+								<option value="name:desc">Naziv: Z - A</option>
+							</select>
+						</div>
+				  	</div>
+
+				</div>
+			</div>
+			  
+
+			<div class="row product-lists">
+				<div class="col-lg-4 col-md-6 text-center privjesci" data-original-order="65">
+					<div class="single-product-item">
+						<div class="product-image">
+							<div class="image-frame">
+								<a href="proizvodi-stranice/privjesak_s_imenom.html"><img src="assets/img/privjesak2.png" alt="" class="fit-image"></a>
+							</div>
+						</div>	
+						<h3>Privjesak s imenom</h3>
+						<p class="product-price"> 6 € </p>
+						<a href="proizvodi-stranice/privjesak_s_imenom.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center privjesci" data-original-order="64">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/privjesak_s_natpisom.html"><img src="assets/img/privjesak1.png" alt="" class="fit-image"></a>
+						</div>
+						<h3>Privjesak s natpisom</h3>
+						<p class="product-price"> 6 € </p>
+						<a href="proizvodi-stranice/privjesak_s_natpisom.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center privjesci" data-original-order="63">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/privjesak_volim_te.html"><img src="assets/img/lancic2.png" alt="" class="fit-image"></a>
+						</div>
+						<h3>Privjesak VOLIM TE</h3>
+						<p class="product-price"> 12 € </p>
+						<a href="proizvodi-stranice/privjesak_volim_te.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="62">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_izboceni_isus.html"><img src="assets/img/products/l_izbocen_Isus1.jpg" alt="" class="fit-image"></a>
+						</div>
+						<h3>Izbočeni Isus</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_izboceni_isus.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="61">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_udubljeni_isus_veliki.html"><img src="assets/img/products/l_udubljeni_Isus_veliki1.jpg" alt=""></a>
+						</div>
+						<h3>Udubljen Isus veliki</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_udubljeni_isus_veliki.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="60">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_udubljeni_Isus_mali.html"><img src="assets/img/products/l_udubljeni_Isus_mali1.jpg" alt=""></a>
+						</div>
+						<h3>Udubljen Isus mali</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_udubljeni_Isus_mali.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="59">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_pozlaceni_isus.html"><img src="assets/img/products/l_pozlaceni_Isus2.jpg" alt=""></a>
+						</div>
+						<h3>Pozlaćeni Isus</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_pozlaceni_isus.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="58">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_duh_sveti.html"><img src="assets/img/products/l_duh_sveti2.jpg" alt=""></a>
+						</div>
+						<h3>Duh sveti</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_duh_sveti.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="57">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_kriz_s_izbocenim_srcem.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Križ s izbočenim srcem </h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_kriz_s_izbocenim_srcem.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="56">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_kriz_s_udubljenim_srcem.html"><img src="assets/img/products/l_kriz_s_udubljenim_srcem1.jpg" alt=""></a>
+						</div>
+						<h3>Križ s udubljenim srcem</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_kriz_s_udubljenim_srcem.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="55">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_srce_s_duhom_svetim.html"><img src="assets/img/products/l_srce_s_duhom_svetim1.jpg" alt=""></a>
+						</div>
+						<h3>Srce s Duhom svetim</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_srce_s_duhom_svetim.html.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="54">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_srce_s_krizem.html"><img src="assets/img/products/l_srce_s_krizem1.jpg" alt=""></a>
+						</div>
+						<h3>Srce s križem</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_srce_s_krizem.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center lancici" data-original-order="53">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/l_srce.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Srce</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/l_srce.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center narukvice" data-original-order="52">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/narukvica_kriz.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Križ</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/narukvica_kriz.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center narukvice" data-original-order="51">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/narukvica_riba.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Riba</h3>
+						<p class="product-price"> 7 € </p>
+						<a href="proizvodi-stranice/narukvica_riba.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center svijecnjaci" data-original-order="50">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/svijecnjak_riba.html"><img src="assets/img/products/riba.png" alt=""></a>
+						</div>
+						<h3>Riba</h3>
+						<p class="product-price"> 10 € </p>
+						<a href="proizvodi-stranice/svijecnjak_riba.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>	
+				<div class="col-lg-4 col-md-6 text-center svijecnjaci" data-original-order="49">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/svijecnjak_srce.html"><img src="assets/img/products/svijecnjak_srce1.jpg" alt=""></a>
+						</div>
+						<h3>Srce</h3>
+						<p class="product-price"> 10 € </p>
+						<a href="proizvodi-stranice/svijecnjak_srce.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center svijecnjaci" data-original-order="48">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/svijecnjak-adventski-križ.html"><img src="assets/img/products/svijecnjak_adventski_kriz1.jpg" alt=""></a>
+						</div>
+						<h3>Adventski vijenac - Križ</h3>
+						<p class="product-price"> 35 € </p>
+						<a href="proizvodi-stranice/svijecnjak-adventski-križ.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>		
+				<div class="col-lg-4 col-md-6 text-center svijecnjaci" data-original-order="47">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/svijecnjak-adventski-grav_pleter.html"><img src="assets/img/products/svijecnjak_adventski_grav_pleter1.jpg" alt=""></a>
+						</div>
+						<h3>Adventski vijenac - Gravirani pleter</h3>
+						<p class="product-price"> 60 € </p>
+						<a href="proizvodi-stranice/svijecnjak-adventski-grav_pleter.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>	
+				<div class="col-lg-4 col-md-6 text-center svijecnjaci" data-original-order="46">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/svijecnjak-adventski-rucni-pleter.html"><img src="assets/img/products/svijecnjak_adventski_rucni_pleter1.jpg" alt=""></a>
+						</div>
+						<h3>Adventski vijenac - Ručni pleter</h3>
+						<p class="product-price"> 70 € </p>
+						<a href="proizvodi-stranice/svijecnjak-adventski-rucni-pleter.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center svijecnjaci" data-original-order="45">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/svijecnjak-adventski-srce_malo.html"><img src="assets/img/products/svijecnjak_adventski_srce_malo1.jpg" alt=""></a>
+						</div>
+						<h3>Adventski vijenac - Srce malo</h3>
+						<p class="product-price"> 35 € </p>
+						<a href="proizvodi-stranice/svijecnjak-adventski-srce_malo.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center svijecnjaci" data-original-order="44">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/svijecnjak-adventski-srce_veliko.html"><img src="assets/img/products/svijecnjak_adventski_srce_veliko1.jpg" alt=""></a>
+						</div>
+						<h3>Adventski vijenac - Srce veliko</h3>
+						<p class="product-price"> 50 € </p>
+						<a href="proizvodi-stranice/svijecnjak-adventski-srce_veliko.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>	
+				<div class="col-lg-4 col-md-6 text-center skulpture" data-original-order="43">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/skulptura-LOVE.html"><img src="assets/img/products/skulptura_love3.jpg" alt=""></a>
+						</div>
+						<h3>LOVE</h3>
+						<p class="product-price"> 20 € </p>
+						<a href="proizvodi-stranice/skulptura-LOVE.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>	
+				<div class="col-lg-4 col-md-6 text-center skulpture" data-original-order="42">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/skulptura-I3U.html"><img src="assets/img/products/skulptura_iLu2.jpg" alt=""></a>
+						</div>
+						<h3>I &lt3 U</h3>
+						<p class="product-price"> 15 € </p>
+						<a href="proizvodi-stranice/skulptura-I3U.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center skulpture" data-original-order="41">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/skulptura_srce_postolje.html"><img src="assets/img/products/skulptura_srce_postolje1.jpg" alt=""></a>
+						</div>
+						<h3>Srce s postoljem</h3>
+						<p class="product-price"> 20 - 25 € </p>
+						<a href="proizvodi-stranice/skulptura_srce_postolje.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center skropionice" data-original-order="40">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/skropionica-pravokutna.html"><img src="assets/img/products/skropionica_pravokutna4.jpg" alt=""></a>
+						</div>
+						<h3>Pravokutna</h3>
+						<p class="product-price"> 20 - 30 € </p>
+						<a href="proizvodi-stranice/skropionica-pravokutna.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center skropionice" data-original-order="39">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/skropionica-ovalna.html"><img src="assets/img/products/skropionica_ovalna3.jpg" alt=""></a>
+						</div>
+						<h3>Ovalna</h3>
+						<p class="product-price"> 20 - 30 € </p>
+						<a href="proizvodi-stranice/skropionica-ovalna.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center skropionice" data-original-order="38">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/skropionica-viseslavova.html"><img src="assets/img/products/skropionica_viseslavova2.jpg" alt=""></a>
+						</div>
+						<h3>Višeslavova</h3>
+						<p class="product-price"> 50 € </p>
+						<a href="proizvodi-stranice/skropionica-viseslavova.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center satovi">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/single-product.html"><img src="assets/img/products/duhsveti.png" alt=""></a>
+						</div>
+						<h3>Duh sveti</h3>
+						<p class="product-price"> 40€ </p>
+						<a href="proizvodi-stranice/.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center satovi">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/single-product.html"><img src="assets/img/products/brodica.png" alt=""></a>
+						</div>
+						<h3>Brodica</h3>
+						<p class="product-price"> 40€ </p>
+						<a href="proizvodi-stranice/.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center satovi">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/single-product.html"><img src="assets/img/products/srcesat.png" alt=""></a>
+						</div>
+						<h3>Srce</h3>
+						<p class="product-price"> 40€ </p>
+						<a href="proizvodi-stranice/.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center satovi">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/single-product.html"><img src="assets/img/products/vodotoranj.png" alt=""></a>
+						</div>
+						<h3>Vukovarski vodotoranj</h3>
+						<p class="product-price"> 40€ </p>
+						<a href="proizvodi-stranice/.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center gravure" data-original-order="37">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/gravura-Lik_Isusa.html"><img src="assets/img/products/gravura_lik_Isusa2.jpg" alt=""></a>
+						</div>
+						<h3>Lik Isusa</h3>
+						<p class="product-price"> 55 € </p>
+						<a href="proizvodi-stranice/gravura-Lik_Isusa.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center gravure" data-original-order="36">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/gravura-posljednja_vecera.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Posljednja večera</h3>
+						<p class="product-price"> 70 € </p>
+						<a href="proizvodi-stranice/gravura-posljednja_vecera.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<!--<div class="col-lg-4 col-md-6 text-center gravure" data-original-order="35">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/gravura-srce_Isusovo.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Srce Isusovo</h3>
+						<p class="product-price"> 35 € </p>
+						<a href="proizvodi-stranice/gravura-srce_Isusovo.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center gravure" data-original-order="34">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/gravura-sveti_josip.html"><img src="assets/img/products/gravura_sveti_josip3.jpg" alt=""></a>
+						</div>
+						<h3>Usnuli sveti Josip na postolju</h3>
+						<p class="product-price"> 60 € </p>
+						<a href="proizvodi-stranice/gravura-sveti_josip.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center gravure" data-original-order="33">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/gravura-andeo.html"><img src="assets/img/products/gravura_andeo.jpg" alt=""></a>
+						</div>
+						<h3>Anđeo na postolju</h3>
+						<p class="product-price"> 30 € </p>
+						<a href="proizvodi-stranice/gravura-andeo.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center gravure" data-original-order="32">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/gravura-sveti_gospa_godalupska.html"><img src="assets/img/products/gravura_godalupska.jpg" alt=""></a>
+						</div>
+						<h3>Gospa Godalupska na postolju</h3>
+						<p class="product-price"> 70 € </p>
+						<a href="proizvodi-stranice/gravura-sveti_gospa_godalupska.htmll" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center gravure" data-original-order="31">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/gravura-hrvatski_grb.html"><img src="assets/img/products/gravura-hrvatski_grb.jpg" alt=""></a>
+						</div>
+						<h3>Hrvatski grb</h3>
+						<p class="product-price"> 60 € </p>
+						<a href="proizvodi-stranice/gravura-hrvatski_grb.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center natpisi" data-original-order="30">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/natpis-zdravo_Marijo.html"><img src="assets/img/products/natpis_zdravo_marijo.jpg" alt=""></a>
+						</div>
+						<h3>Natpis - Zdravo Marijo</h3>
+						<p class="product-price"> 55 € </p>
+						<a href="proizvodi-stranice/natpis-zdravo_Marijo.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center natpisi" data-original-order="29">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/natpis-kajem_se.html"><img src="assets/img/products/natpis_kajem_je.jpg" alt=""></a>
+						</div>
+						<h3>Natpis - Kajem se</h3>
+						<p class="product-price"> 35 € </p>
+						<a href="proizvodi-stranice/natpis-kajem_se.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center natpisi" data-original-order="28">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/natpis-bozja_ljubav.html"><img src="assets/img/products/" alt=""></a>
+						</div>
+						<h3>Natpis - Božja ljubav</h3>
+						<p class="product-price"> 15 € </p>
+						<a href="proizvodi-stranice/natpis-bozja_ljubav.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center natpisi" data-original-order="27">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/natpis-hvaljen_Isus_Marija.html"><img src="assets/img/products/natpis_hvaljen.jpg" alt=""></a>
+						</div>
+						<h3>Natpis - Hvaljen Isus i Marija</h3>
+						<p class="product-price"> 40 € </p>
+						<a href="proizvodi-stranice/natpis-hvaljen_Isus_Marija.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center natpisi" data-original-order="26">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/natpis-oce_nas.html"><img src="assets/img/products/natpis_oce_nas.jpg" alt=""></a>
+						</div>
+						<h3>Natpis - Oče naš</h3>
+						<p class="product-price"> 50 € </p>
+						<a href="proizvodi-stranice/natpis-oce_nas.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center natpisi" data-original-order="25">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/natpis-vjerovanje.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Natpis - Vjerovanje</h3>
+						<p class="product-price"> 50 € </p>
+						<a href="proizvodi-stranice/natpis-vjerovanje.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center natpisi" data-original-order="24">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/natpis-hrvatska_himna.html"><img src="assets/img/products/natpis_himna.jpg" alt=""></a>
+						</div>
+						<h3>Natpis - Hrvatska himna</h3>
+						<p class="product-price"> 55 € </p>
+						<a href="proizvodi-stranice/natpis-hrvatska_himna.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="23">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_mac.html"><img src="assets/img/products/kriz_zid_mac4.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Mač</h3>
+						<p class="product-price"> 45 € </p>
+						<a href="proizvodi-stranice/kriz_zid_mac.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="22">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_pleter.html"><img src="assets/img/products/kriz_zid_pleter1.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Pleter</h3>
+						<p class="product-price"> 20 - 30 € </p>
+						<a href="proizvodi-stranice/kriz_zid_pleter.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="21">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_valovi.html"><img src="assets/img/products/kriz_zid_valovi_3.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Valovi</h3>
+						<p class="product-price"> 15 - 30 € </p>
+						<a href="proizvodi-stranice/kriz_zid_valovi.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="20">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_Isus_udubljen.html"><img src="assets/img/products/kriz_zid_Isus_udubljen8.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Isus udubljen</h3>
+						<p class="product-price"> 20 - 30 € </p>
+						<a href="proizvodi-stranice/kriz_zid_Isus_udubljen.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="19">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_umjetnicki.html"><img src="assets/img/products/kriz_zid_umjetnicki2.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Umjetnički</h3>
+						<p class="product-price"> 20 € - 30 € </p>
+						<a href="proizvodi-stranice/kriz_zid_umjetnicki.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="18">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_pozlacen.html"><img src="assets/img/products/kriz_zid_Isus_pozlacen3.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Pozlaćen</h3>
+						<p class="product-price"> 20 - 30 € </p>
+						<a href="proizvodi-stranice/kriz_zid_pozlacen.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="17">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_izbocen.html"><img src="assets/img/products/kriz_zid_Isus_izbocen4.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Isus izbočen</h3>
+						<p class="product-price"> 20 - 30 € </p>
+						<a href="proizvodi-stranice/kriz_zid_izbocen.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="16">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_bozja_pobjeda.html"><img src="assets/img/products/kriz_zid_bozja_pobjeda4.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Božja pobjeda</h3>
+						<p class="product-price">20 €</p>
+						<a href="proizvodi-stranice/kriz_zid_bozja_pobjeda.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="15">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_zid_kriz_jedinstva.html"><img src="assets/img/products/kriz_zid_kriz_jedinstva4.jpg" alt=""></a>
+						</div>
+						<h3>Križ za zid - Križ jedinstva</h3>
+						<p class="product-price">50 €</p>
+						<a href="proizvodi-stranice/kriz_zid_kriz_jedinstva.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="14">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_postolje_Isus_udubljen.html"><img src="assets/img/products/kriz_postolje_Isus_udubljen6.jpg" alt=""></a>
+						</div>
+						<h3>Križ na postolju - Isus udubljen</h3>
+						<p class="product-price">30 €</p>
+						<a href="proizvodi-stranice/kriz_postolje_Isus_udubljen.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="13">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_postolje_Isus_izbocen.html"><img src="assets/img/products/kriz_postolje_Isus_izbocen3.jpg" alt=""></a>
+						</div>
+						<h3>Križ na postolju - Isus izbočen</h3>
+						<p class="product-price">30 €</p>
+						<a href="proizvodi-stranice/kriz_postolje_Isus_izbocen.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="12">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_postolje_pleter_pozlacen.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Križ na postolju - Pleter pozlaćen</h3>
+						<p class="product-price">40 €</p>
+						<a href="proizvodi-stranice/kriz_postolje_pleter_pozlacen.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center krizevi" data-original-order="11">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/kriz_postolje_kriz_jedinstva.html"><img src="assets/img/products/kriz_postolje_jedinstvo2.jpg" alt=""></a>
+						</div>
+						<h3>Križ na postolju - Križ jedinstva</h3>
+						<p class="product-price">55 €</p>
+						<a href="proizvodi-stranice/kriz_postolje_kriz_jedinstva.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="10">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_krunica.html"><img src="assets/img/products/ostalo_krunica1.jpg" alt=""></a>
+						</div>
+						<h3>Krunica</h3>
+						<p class="product-price">75 €</p>
+						<a href="proizvodi-stranice/ostalo_krunica.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="9">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_mac_s_krunicom.html"><img src="assets/img/products/ostalo_mac.jpg" alt=""></a>
+						</div>
+						<h3>Mač s krunicom</h3>
+						<p class="product-price">80 €</p>
+						<a href="proizvodi-stranice/ostalo_mac_s_krunicom.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="8">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_tamjanica_grob.html"><img src="assets/img/products/ostalo_tamjanica_grob1.jpg" alt=""></a>
+						</div>
+						<h3>Tamjanica - Isusov grob</h3>
+						<p class="product-price">75 €</p>
+						<a href="proizvodi-stranice/ostalo_tamjanica_grob.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="7">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_svijecnjak_grob.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Svijećnjak - Isusov grob</h3>
+						<p class="product-price">40 €</p>
+						<a href="proizvodi-stranice/ostalo_svijecnjak_grob.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="6">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_kutija_za_nakit_srce.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Kutija za nakit - srce</h3>
+						<p class="product-price">40 €</p>
+						<a href="proizvodi-stranice/ostalo_kutija_za_nakit_srce.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="5">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_kutija_za_nakit_okrugla.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Kutija za nakit - okrugla</h3>
+						<p class="product-price">45 €</p>
+						<a href="proizvodi-stranice/ostalo_kutija_za_nakit_okrugla.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="4">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_pepeljara.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Pepeljara</h3>
+						<p class="product-price">15 €</p>
+						<a href="proizvodi-stranice/ostalo_pepeljara.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="3">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_stalak_za_penkale.html"><img src="assets/img/products/product-img-5.jpg" alt=""></a>
+						</div>
+						<h3>Stalak za penkale</h3>
+						<p class="product-price">40 €</p>
+						<a href="proizvodi-stranice/ostalo_stalak_za_penkale.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>-->
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="2">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_zidni_kljucevi.html"><img src="assets/img/products/ostalo_stalak_zid3.jpg" alt=""></a>
+						</div>
+						<h3>Zidni stalak za ključeve</h3>
+						<p class="product-price">30 €</p>
+						<a href="proizvodi-stranice/ostalo_zidni_kljucevi.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 text-center ostalo" data-original-order="1">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="proizvodi-stranice/ostalo_samostojeci_kljucevi.html"><img src="assets/img/products/ostalo_stalak_postolje_prazno2.jpg" alt=""></a>
+						</div>
+						<h3>Samostojeći stalak za ključeve</h3>
+						<p class="product-price">25 €</p>
+						<a href="proizvodi-stranice/ostalo_samostojeci_kljucevi.html" class="bordered-btn">Više o proizvodu</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- end products -->
+
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">O nama</h2>
+						<p>Mi smo obiteljski obrt koji želi s Vama podjeliti radost u obliku predivnih, kamenih i ručno rađenih proizvoda.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">Kontakt</h2>
+						<ul>
+							<li>Lug Zabočki 70, 49210 Zabok</li>
+							<li>valecluka8@gmail.com</li>
+							<li>+385 91 360 7879</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">Stranice</h2>
+						<ul>
+							<li><a href="index.html">Početna</a></li>
+							<li><a href="about.html">O nama</a></li>
+							<li><a href="#">Proizvodi</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Kontakt</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+	
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2024 - Od kamena do znamena,  All Rights Reserved.<br>
+					</p>
+				</div>
+				<div class="col-lg-6 text-right col-md-12">
+					<div class="social-icons">
+						<ul>
+							<li><a href="https://www.facebook.com/p/Od-kamena-do-znamena-100069816590929/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/odkamenadoznamena/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+	
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
